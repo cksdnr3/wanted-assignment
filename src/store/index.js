@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import search from './search'
-import books from './books'
+import search from 'store/search'
+import books from 'store/books'
 
 export default configureStore({
   reducer: {

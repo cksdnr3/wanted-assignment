@@ -7,8 +7,8 @@ import {
   useLocation
 } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-import { Main, Result, Filters } from './pages'
-import store from './store'
+import { Main, Result, Filters } from 'pages'
+import store from 'store'
 
 function Routes() {
   const location = useLocation()

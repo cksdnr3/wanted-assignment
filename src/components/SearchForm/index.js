@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import useForm from '../../hooks/useForm'
-import LinkToFilter from './LinkToFilter'
+import useForm from 'hooks/useForm'
+import LinkToFilter from 'components/SearchForm/LinkToFilter'
 
 function SearchForm() {
   const location = useLocation()

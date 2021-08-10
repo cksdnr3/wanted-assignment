@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { setSearch } from '../../store/search'
+import { setSearch } from 'store/search'
 
 function useSync() {
   const dispatch = useDispatch()

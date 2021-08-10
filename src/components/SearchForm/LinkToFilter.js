@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import IconFilter from './IconFilter'
+import IconFilter from 'components/SearchForm/IconFilter'
 
 function LinkToFilter() {
   const location = useLocation()

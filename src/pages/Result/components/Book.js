@@ -2,10 +2,11 @@ import React from 'react'
 import { css, cx } from 'emotion'
 
 function Book({ defaultClassName, volumeInfo }) {
+
   return (
     <div className={cx([defaultClassName, styles.wrapper])}>
       <img
-        src={volumeInfo?.imageLinks?.thumbnail}
+        src={volumeInfo?.imageLinks?.thumbnail || 'images/default.png'}
         className={cx(
           styles.media,
           css({

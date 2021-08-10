@@ -1,11 +1,11 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { cx } from 'emotion'
-import useForm from '../../hooks/useForm'
-import Stack from '../../components/Stack'
-import Fieldset from '../../components/Form/Fieldset'
-import Select from '../../components/Form/Select'
-import Radio from '../../components/Form/Radio'
+import useForm from 'hooks/useForm'
+import Stack from 'components/Stack'
+import Fieldset from 'components/Form/Fieldset'
+import Select from 'components/Form/Select'
+import Radio from 'components/Form/Radio'
 
 function Filters() {
   const history = useHistory()

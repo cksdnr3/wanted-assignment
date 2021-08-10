@@ -1,4 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+
+Fieldset.propTypes = {
+  legend: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+}
 
 function Fieldset({ legend, children }) {
   return (
