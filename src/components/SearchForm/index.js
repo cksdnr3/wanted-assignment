@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 import useForm from 'hooks/useForm'
 import LinkToFilter from 'components/SearchForm/LinkToFilter'
 
-function SearchForm() {
+function SearchForm({toggle}) {
   const location = useLocation()
   const { state, handleChange, handleSubmit } = useForm()
 
@@ -28,7 +28,7 @@ function SearchForm() {
         </button>
       </fieldset>
 
-      {location.pathname === '/result' && <LinkToFilter />}
+      {location.pathname === '/result' && <LinkToFilter toggle={toggle} />}
     </form>
   )
 }

@@ -7,12 +7,8 @@ import Fieldset from 'components/Form/Fieldset'
 import Select from 'components/Form/Select'
 import Radio from 'components/Form/Radio'
 
-function Filters() {
-  const history = useHistory()
+function Filters({toggle}) {
   const { state, handleChange, handleSubmit } = useForm()
-  const handleCancel = () => {
-    history.goBack()
-  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -88,11 +84,11 @@ function Filters() {
           <button
             type="button"
             className={cx([styles.button, styles.cancel])}
-            onClick={handleCancel}
+            onClick={() => toggle()}
           >
             취소
           </button>
-          <button type="submit" className={cx([styles.button, styles.submit])}>
+          <button onClick={() => toggle()} type="submit" className={cx([styles.button, styles.submit])}>
             확인
           </button>
         </Stack>

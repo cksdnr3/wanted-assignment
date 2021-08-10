@@ -7,7 +7,7 @@ import {
   useLocation
 } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-import { Main, Result, Filters } from 'pages'
+import { Main, Result } from 'pages'
 import store from 'store'
 
 function Routes() {
@@ -26,9 +26,6 @@ function Routes() {
         </Route>
         <Route path="/result">
           <Result />
-        </Route>
-        <Route path="/filters">
-          <Filters />
         </Route>
       </Switch>
     </animated.div>

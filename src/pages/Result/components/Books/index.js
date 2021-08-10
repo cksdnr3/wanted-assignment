@@ -1,6 +1,6 @@
 import React from 'react'
 import uniqBy from 'lodash/uniqBy'
-import Book from 'pages/Result/components/Book'
+import Book from 'pages/Result/components/Books/Book'
 
 function Books({ items }) {
   return (
